@@ -3,6 +3,7 @@ import testBtc2 from "./testBtc2";
 import testBtc3 from "./testBtc3";
 import testBtc4 from "./testBtc4";
 import testBtcSegMulti from "./testBtcSegMulti";
+import testBtcSignP2SHSeg from "./testBtcSignP2SHSeg";
 import testEth from "./testEth";
 import testEth2 from "./testEth2";
 import testEth3 from "./testEth3";
@@ -28,29 +29,30 @@ function expectAppContext(appName) {
 
 var tests = [
   expectAppContext("Bitcoin (btc)"),
-  { name: "testBtc", run: testBtc },
-  { name: "testBtc2", run: testBtc2 },
-  { name: "testBtc3", run: testBtc3 },
-  { name: "testBtc4", run: testBtc4 },
-  { name: "testBtcSegMulti", run: testBtcSegMulti },
-  expectAppContext("Ethereum (eth)"),
-  { name: "testEth", run: testEth },
-  { name: "testEth2", run: testEth2 },
-  { name: "testEth3", run: testEth3 },
-  { name: "testEth4", run: testEth4 },
-  expectAppContext("Ripple (xrp)"),
-  { name: "testXrp", run: testXrp },
-  { name: "testXrp2", run: testXrp2 },
-  { name: "testXrp3", run: testXrp3 },
-  expectAppContext("Stellar"),
-  { name: "testStr", run: testStr },
-  { name: "testStr2", run: testStr2 },
-  { name: "testStr3", run: testStr3 },
-  expectAppContext("Cardano (ada)"),
-  { name: "testAda", run: testAda },
-  { name: "testAda2", run: testAda2 },
-  { name: "testAda3", run: testAda3 },
-  { name: "testAda4", run: testAda4 }
+  // { name: "testBtc", run: testBtc },
+  // { name: "testBtc2", run: testBtc2 },
+  // { name: "testBtc3", run: testBtc3 },
+  // { name: "testBtc4", run: testBtc4 },
+  // { name: "testBtcSegMulti", run: testBtcSegMulti },
+  { name: "testBtcSignP2SHSeg", run: testBtcSignP2SHSeg },
+  // expectAppContext("Ethereum (eth)"),
+  // { name: "testEth", run: testEth },
+  // { name: "testEth2", run: testEth2 },
+  // { name: "testEth3", run: testEth3 },
+  // { name: "testEth4", run: testEth4 },
+  // expectAppContext("Ripple (xrp)"),
+  // { name: "testXrp", run: testXrp },
+  // { name: "testXrp2", run: testXrp2 },
+  // { name: "testXrp3", run: testXrp3 },
+  // expectAppContext("Stellar"),
+  // { name: "testStr", run: testStr },
+  // { name: "testStr2", run: testStr2 },
+  // { name: "testStr3", run: testStr3 },
+  // expectAppContext("Cardano (ada)"),
+  // { name: "testAda", run: testAda },
+  // { name: "testAda2", run: testAda2 },
+  // { name: "testAda3", run: testAda3 },
+  // { name: "testAda4", run: testAda4 }
 ];
 
 const defaultWaitForAppSwitch = step =>
